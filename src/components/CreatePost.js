@@ -1,10 +1,7 @@
-import Navbar from "./Navbar";
-
 function CreatePost() {
     return (
-      <div>
-        <Navbar />
-        CreatePost
+      <div className="create-post">
+        
       </div>
     );
   }
