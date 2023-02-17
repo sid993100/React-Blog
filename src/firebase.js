@@ -1,5 +1,6 @@
-import firebase from 'firebase/app';
-import 'firebase/firestore';
+//latest version use imports like below
+import firebase from "firebase/compat/app";
+import "firebase/compat/firestore";
 
 const firebaseConfig = {
   apiKey: "AIzaSyBFReIm1F-bTxFH1wnAswI90m2_-a2YXyY",
@@ -11,7 +12,8 @@ const firebaseConfig = {
   measurementId: "G-6DG4PZHP2Z"
 };
 
+//latest version initiliaze and export db like this below
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 
-export const firebase = firebase.firestore();
+export const firestore = firebase.firestore();
