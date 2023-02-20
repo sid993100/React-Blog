@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { firestore } from '../firebase';
+import Navbar from './Navbar';
 
 function Home() {
   const [posts, setPosts] = useState([]);
@@ -24,8 +25,10 @@ function Home() {
 
   return (
     <div className="home">
+      <Navbar />
       <h1>Tech Blog</h1>
       <div id="blog-by">Siddharth</div>
+      
 
       {posts.map((post, index) =>(
         <div className='post' key={`post=${index}`}>

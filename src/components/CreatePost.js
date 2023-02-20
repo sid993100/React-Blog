@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { firestore } from '../firebase';
 import {useFormInput} from '../hooks';
+import Navbar from "./Navbar";
 
 
 function CreatePost() {
@@ -27,6 +28,7 @@ function CreatePost() {
   
   return (
     <div className="create-post">
+      <Navbar />
       <h1>Create Post</h1>
 
       <form onSubmit={handleSubmit}>
