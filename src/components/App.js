@@ -11,7 +11,7 @@ function App() {
         <Route path='/Navbar' element={<Navbar/>} exact/>
         <Route path="/" element={<Home />} exact/>
         <Route path="/Create-Post" element={<CreatePost />} exact/>
-        <Route path="/Post-Detail" element={<PostDetail />} exact/>
+        <Route path="/Post-Detail/:postId" element={<PostDetail />} exact/>
       </Routes>
     </div>
   );

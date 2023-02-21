@@ -6,6 +6,7 @@ import Navbar from './Navbar';
 function PostDetail() {
   const [post, setPost] = useState({});
   const { postId } = useParams();
+  // const postId = useParams();
 
   useEffect(() => {
     firestore
